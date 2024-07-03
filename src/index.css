@@ -88,9 +88,63 @@ button {
 }
 
 #me {
-  color: bisque;
+  font-family: monospace;
+  color: rgb(232, 232, 232);
 }
 
 #me a {
-  color: aquamarine;
+  color: rgb(25, 237, 159);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .length-container {
+    flex-direction: flex;
+    gap: 1.4rem;
+  }
+
+  .sub-break-length, .sub-session-length {
+    font-size: 1.5rem;
+  }
+
+  .fa-solid {
+    font-size: 1.5rem;
+  }
+
+  #header {
+    font-size: 2.5rem;
+  }
+
+  .timer-container {
+    padding-inline: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .length-container {
+    flex-direction: flex;
+    gap: 1rem;
+  }
+
+  .sub-break-length, .sub-session-length {
+    font-size: 1.2rem;
+  }
+
+  .fa-solid {
+    font-size: 1.2rem;
+  }
+
+  #header {
+    font-size: 2rem;
+  }
+
+  .timer-container {
+    padding-inline: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #start, #stop, #reset {
+    padding-inline: 0.5rem;
+  }
 }
