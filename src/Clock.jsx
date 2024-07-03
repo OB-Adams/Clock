@@ -37,6 +37,7 @@ function Clock() {
       setTimeLeft((sessionLength - 1) * 60)
     } else if (type === "break" && breakLength > 1) {
       setBreakLength(breakLength - 1);
+      setTimeLeft((breakLength - 1) * 60)
     }
   };
 
@@ -46,6 +47,7 @@ function Clock() {
       setTimeLeft((sessionLength + 1) * 60)
     } else if (type === "break" && breakLength < 5) {
       setBreakLength(breakLength + 1);
+      setTimeLeft((breakLength + 1) * 60)
     }
   };
 
