@@ -34,20 +34,20 @@ function Clock() {
   const handleDecrement = (type) => {
     if (type === "session" && sessionLength > 1) {
       setSessionLength(sessionLength - 1);
-      setTimeLeft((sessionLength - 1) * 60)
+      isSession ? setTimeLeft((sessionLength - 1) * 60): null
     } else if (type === "break" && breakLength > 1) {
       setBreakLength(breakLength - 1);
-      setTimeLeft((breakLength - 1) * 60)
+      !isSession ? setTimeLeft((breakLength - 1) * 60): null
     }
   };
 
   const handleIncrement = (type) => {
     if (type === "session" && sessionLength < 60) {
       setSessionLength(sessionLength + 1);
-      setTimeLeft((sessionLength + 1) * 60)
+      isSession ? setTimeLeft((sessionLength + 1) * 60): null
     } else if (type === "break" && breakLength < 5) {
       setBreakLength(breakLength + 1);
-      setTimeLeft((breakLength + 1) * 60)
+      !isSession ? setTimeLeft((breakLength + 1) * 60): null
     }
   };
 
