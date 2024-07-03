@@ -47,6 +47,21 @@
 
 .start-stop-container {
   display: flex;
+  gap: 10px;
+}
+
+#start, #stop, #reset {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.692);
+  border-radius: 10px;
+  padding-inline: 1rem;
+  border: none;
+  font-weight: bold;
+  transition: ease-in-out 0.2s;
+}
+
+#reset:hover, #start:hover {
+  transform: scale(1.25);
 }
 
 button {
