@@ -50,7 +50,7 @@
   gap: 10px;
 }
 
-#start, #stop, #reset {
+#start_stop, #reset {
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.692);
   border-radius: 10px;
@@ -60,7 +60,7 @@
   transition: ease-in-out 0.2s;
 }
 
-#reset:hover, #start:hover {
+#reset:hover, #start_stop:hover {
   transform: scale(1.25);
 }
 
@@ -69,6 +69,14 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
+}
+
+.fa-solid {
+  transition: all ease-in-out 0.15s;
+}
+
+.fa-solid:hover {
+  transform: scale(1.2);
 }
 
 #header {
@@ -144,7 +152,7 @@ button {
     font-size: 1.2rem;
   }
 
-  #start, #stop, #reset {
+  #start_stop, #reset {
     padding-inline: 0.5rem;
   }
 }
